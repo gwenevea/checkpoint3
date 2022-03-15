@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Nunito', sans-serif;
+    padding: 0 100px 0 100px;
 }
 
 nav {
@@ -50,3 +51,18 @@ img:hover {
 img:nth-child(3n) {
     border: 10px dotted #008080;
   }
+
+.skip {
+   /* left:-999px;
+    position:absolute;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    z-index:-999;*/
+}
+
+footer {
+    text-align: center;
+    font-size: 12px;
+}
