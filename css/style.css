@@ -2,8 +2,35 @@
 
 body {
     font-family: 'Nunito', sans-serif;
-    padding: 0 100px 0 100px;
+    padding: 0 20px 0 20px;
+    background-image: url("../images/gradient.jpg");
+    background-position: cover;
+    /*background-color: #ab4313;
+    background-image:  url("../images/camera.jpg");
+    background-blend-mode: multiply;
+    background-repeat: repeat;*/
 }
+
+.skew {
+    transform:skew(60deg, -30deg) scaleY(.66667);
+}
+ /*make look nicer*/ 
+
+@keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-20px);
+    }
+  }
+
+  .animate:hover {
+    animation:
+      bounce 300ms
+      alternate infinite
+      cubic-bezier(.2, .65, .6, 1);
+  }
 
 nav {
     display: inline;
@@ -65,4 +92,51 @@ img:nth-child(3n) {
 footer {
     text-align: center;
     font-size: 12px;
+}
+
+/*make sure to WAVE inspect the form*/
+input, textarea {
+    display: block;
+    border-radius: 5px;
+    border: 1px solid #878787;
+    margin-bottom: 7px;
+    margin-top: 3px;
+}
+
+/* she added this *focus in class, unsure if should keep*/
+/*!!!!!!!!!!! Look at her lecture example for interesting label format, box, and linkedin*/
+/*make sure to add aria label in linkedin*/
+/*Add link to page in Google Doc submission*/
+*:focus {
+    border: 2px solid #303030;
+    background-color: #f7f7f7;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+legend {
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+form {
+    border: 2px solid grey;
+    border-radius: 10px;
+    margin: 40px auto;
+    padding: 20px;
+    width: 330px;
+}
+
+/*is mobile right size? mobile first*/
+@media screen and (min-width: 600px) {
+    body {
+        padding: 0 100px 0 100px;
+        background-image: none;
+        background-color: none;
+    }
 }
