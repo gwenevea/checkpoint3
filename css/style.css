@@ -11,7 +11,6 @@ body {
     background-repeat: repeat;*/
 }
 
-/*maybe remove*/
 img:hover {
     transform: scale(1.15);
   }
@@ -24,7 +23,6 @@ p {
     transform:skew(40deg, -10deg) scaleY(.8);
     margin: 40px 0px;
 }
- /*make look nicer*/ 
 
 @keyframes bounce {
     from {
@@ -63,8 +61,14 @@ ul li a:hover {
     width: 90%;
 }
 
+.flex img {
+    margin: 10px;
+}
+
 img {
-    width: 200px;
+    padding: 5px;
+    border: 10px solid #800080;
+    border-radius: 5px;
 }
 
 .current{
@@ -92,13 +96,6 @@ nav li {
 
 nav li a{
     color: #ffffff;
-}
-
-img {
-    margin: 10px;
-    padding: 5px;
-    border: 10px solid #800080;
-    border-radius: 5px;
 }
 
 .bold {
@@ -163,7 +160,6 @@ form {
     border-radius: 10px;
     margin: 40px auto;
     padding: 20px;
-    width: 330px;
 }
 
 .grid {
@@ -201,6 +197,14 @@ form {
 
     .flex img {
         width: 200px;
+    }
+
+    img {
+        *margin: 10px;
+    }
+
+    form {
+        width: 330px;
     }
 }
 
