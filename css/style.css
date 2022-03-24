@@ -59,8 +59,12 @@ ul li a:hover {
     font-weight: bold;
 }
 
-img {
+.grid img, .flex img {
     width: 90%;
+}
+
+img {
+    width: 200px;
 }
 
 .current{
@@ -172,6 +176,8 @@ form {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    justify-self: center;
+
 }
 
 /*is mobile right size? mobile first*/
