@@ -13,8 +13,12 @@ body {
 
 /*maybe remove*/
 img:hover {
-    transform: scale(1.3);
+    transform: scale(1.15);
   }
+
+p {
+    margin: 10px 0;
+}
 
 .skew {
     transform:skew(40deg, -10deg) scaleY(.8);
@@ -53,6 +57,10 @@ ul li a:hover {
     color: #def5f8;
     text-decoration: none;
     font-weight: bold;
+}
+
+img {
+    width: 90%;
 }
 
 .current{
@@ -103,17 +111,13 @@ img:nth-child(3n) {
   }
 
 .skip {
-   /* left:-999px;
+    left:-999px;
     position:absolute;
-    top:auto;
-    width:1px;
-    height:1px;
-    overflow:hidden;
-    z-index:-999;*/
+    z-index:-999;
 }
 
-.skip {
-    display: none;
+.skip:focus {
+    left: 10px;
 }
 
 footer {
@@ -136,7 +140,6 @@ input, textarea {
 /*Add link to page in Google Doc submission*/
 *:focus {
     border: 2px solid #303030;
-    background-color: #f7f7f7;
 }
 
 h1 {
@@ -159,6 +162,18 @@ form {
     width: 330px;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 /*is mobile right size? mobile first*/
 @media screen and (min-width: 600px) {
     body {
@@ -167,8 +182,19 @@ form {
         background-color: none;
     }
 
-    .skip {
+    /*.skip {
         display: block;
+    }*/
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .flex img {
+        width: 200px;
     }
 }
 
