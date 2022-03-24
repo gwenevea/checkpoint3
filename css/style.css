@@ -11,10 +11,6 @@ body {
     background-repeat: repeat;*/
 }
 
-img:hover {
-    transform: scale(1.15);
-  }
-
 p {
     margin: 10px 0;
 }
@@ -206,12 +202,20 @@ form {
     form {
         width: 330px;
     }
+
+    img:hover {
+        transform: scale(1.15);
+      }
 }
 
 @media (prefers-reduced-motion: reduce) {
         .animate {
             /*unsure if works*/
             animation: none;
+        }
+
+        img:hover {
+            transform: none;
         }
     }
     
